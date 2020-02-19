@@ -15,7 +15,7 @@ Route::get('/', 'HomeController@index')->name('public-home');
 Route::get('/blog', 'PostController@index')->name('blog');
 Route::get('/blog/{slug}', 'PostController@show')->name('blog.show');
 
-Auth::routes();
+Auth::routes(['register' => false]);
 
 Route::middleware('auth')->prefix('admin')->namespace('Admin')->name('admin.')->group(function(){
   Route::get('/', 'HomeController@index')->name('home');
