@@ -22,7 +22,7 @@
                   <a class="nav-link" href="#">Contatti</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="{{route('blog')}}">Blog</a>
+                  <a class="nav-link {{ Route::currentRouteName() == 'blog' ? 'active' : '' }}" href="{{route('blog')}}">Blog-Ricette</a>
               </li>
               @auth
                 <li class="nav-item dropdown">

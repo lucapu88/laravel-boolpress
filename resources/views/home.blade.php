@@ -1,12 +1,6 @@
 {{-- HOMEPAGE PUBLICA --}}
 @extends('layouts.public')
 @section('content')
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
-        <h1>Public Homepage</h1>
-      </div>
-    </div>
-  </div>
+    <img src="https://images.pexels.com/photos/1565982/pexels-photo-1565982.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" width="100%">
 
 @endsection
