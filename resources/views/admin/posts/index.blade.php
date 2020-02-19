@@ -3,7 +3,8 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
-        <h1>Gestione posts</h1>
+        <h1 class="float-left">Gestione posts</h1>
+        <a class="btn btn-outline-success float-right"  href="{{route('admin.posts.create')}}">Crea Nuovo</a>
       </div>
     </div>
     <div class="row">
