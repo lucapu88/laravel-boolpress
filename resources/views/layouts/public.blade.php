@@ -19,6 +19,7 @@
     <main>
       @include('layouts.partials.public-navbar')
       @yield('content')
+      @include('layouts.partials.public-footer')
     </main>
   </body>
 </html>
