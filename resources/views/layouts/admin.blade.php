@@ -21,7 +21,7 @@
 </head>
 <body>
     <div id="app">
-      @include('layouts.partials.navbar')
+      @include('layouts.partials.admin-navbar')
         <main class="py-4">
             @yield('content')
         </main>

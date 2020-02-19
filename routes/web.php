@@ -11,10 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', 'HomeController@index')->name('public-home');
+Route::get('/blog', 'PostController@index')->name('blog');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::middleware('auth')->prefix('admin')->namespace('Admin')->name('admin.')->group(function(){
+  Route::get('/', 'HomeController@index')->name('home');
+  Route::resource('/posts', 'PostController');
+});
