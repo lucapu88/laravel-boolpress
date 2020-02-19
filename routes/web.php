@@ -13,6 +13,7 @@
 
 Route::get('/', 'HomeController@index')->name('public-home');
 Route::get('/blog', 'PostController@index')->name('blog');
+Route::get('/blog/{slug}', 'PostController@show')->name('blog.show');
 
 Auth::routes();
 
