@@ -17,7 +17,7 @@
           </div>
           <div class="form-group">
             <label for="content">Ingredienti</label>
-            <textarea class="form-control" id="content" placeholder="Inserisci gli ingredienti della tua ricetta* (max 10 righe)" name="content" rows="10"></textarea>
+            <textarea class="form-control" id="content" placeholder="Inserisci gli ingredienti della tua ricetta*" name="content" rows="10" required></textarea>
           </div>
           <button type="submit" class="btn btn-outline-success">Inserisci</button>
         </form>
