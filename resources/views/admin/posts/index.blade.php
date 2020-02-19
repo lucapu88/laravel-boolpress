@@ -29,11 +29,11 @@
                 <td>
                   <a class="btn btn-outline-primary" href="{{route('admin.posts.show',['post'=>$post->id])}}">Visualizza Dettagli</a>
                   <a class="btn btn-outline-warning" href="{{route('admin.posts.edit',['post'=>$post->id])}}">Modifica</a>
-                  {{-- <form class="delete" action="{{route()}}" method="post">
+                  <form class="delete" action="{{route('admin.posts.destroy',['post'=>$post->id])}}" method="post">
                     @csrf
                     @method('DELETE')
                     <input type="submit" onclick="return confirm('Are you sure?')" class="btn btn-outline-danger" value="Elimina">
-                  </form> --}}
+                  </form>
                 </td>
               </tr>
             @empty
