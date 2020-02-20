@@ -49533,7 +49533,7 @@ $(document).ready(function () {
   }, 1000);
   $(".title h1").animate({
     marginLeft: "+350px"
-  }, 1000, 'linear'); //il nome della squadra nell'header scorre verso destra
+  }, 1000, 'linear'); //il nome del sottotitolo nell'header scorre verso destra
 });
 
 /***/ }),

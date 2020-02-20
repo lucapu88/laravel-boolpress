@@ -19,3 +19,9 @@ $teal: #4dc0b5;
 $cyan: #6cb2eb;
 
 $paddingOrMargin-top: 50px;
+
+@mixin textColorGradient($color1, $color2) { //crea un gradient del colore della scritta avendo in pasto 2 colori
+  background: -webkit-radial-gradient(circle, $color1 0%, $color2 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

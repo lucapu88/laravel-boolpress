@@ -9,15 +9,16 @@
     margin-top: 15%;
     font-family: 'Lobster', cursive;
     font-weight: bold;
-    color: white;
     h1 {
       font-size: 90px;
-      margin-left: -800px;
+      margin-left: -80%;
+      @include textColorGradient($red, $yellow);
     }
     h2 {
       display: none;
       margin-left: 50%;
       font-size: 50px;
+      @include textColorGradient($red, $yellow);
     }
   }
 }

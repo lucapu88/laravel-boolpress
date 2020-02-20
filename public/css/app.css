@@ -10903,18 +10903,23 @@ a.text-dark:focus {
   margin-top: 15%;
   font-family: "Lobster", cursive;
   font-weight: bold;
-  color: white;
 }
 
 .home .title h1 {
   font-size: 90px;
-  margin-left: -800px;
+  margin-left: -80%;
+  background: -webkit-radial-gradient(circle, #e3342f 0%, #ffed4a 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .home .title h2 {
   display: none;
   margin-left: 50%;
   font-size: 50px;
+  background: -webkit-radial-gradient(circle, #e3342f 0%, #ffed4a 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 main {
