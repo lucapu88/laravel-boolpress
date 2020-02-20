@@ -10,15 +10,15 @@
     font-family: 'Lobster', cursive;
     font-weight: bold;
     h1 {
-      font-size: 90px;
+      font-size: 100px;
       margin-left: -80%;
-      @include textColorGradient($red, $yellow);
+      @include textColorGradient($blue, $yellow);
     }
     h2 {
       display: none;
       margin-left: 50%;
-      font-size: 50px;
-      @include textColorGradient($red, $yellow);
+      font-size: 60px;
+      @include textColorGradient($yellow, $blue);
     }
   }
 }

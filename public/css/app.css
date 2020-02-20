@@ -10906,9 +10906,9 @@ a.text-dark:focus {
 }
 
 .home .title h1 {
-  font-size: 90px;
+  font-size: 100px;
   margin-left: -80%;
-  background: -webkit-radial-gradient(circle, #e3342f 0%, #ffed4a 90%);
+  background: -webkit-radial-gradient(circle, #3490dc 0%, #ffed4a 90%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -10916,8 +10916,8 @@ a.text-dark:focus {
 .home .title h2 {
   display: none;
   margin-left: 50%;
-  font-size: 50px;
-  background: -webkit-radial-gradient(circle, #e3342f 0%, #ffed4a 90%);
+  font-size: 60px;
+  background: -webkit-radial-gradient(circle, #ffed4a 0%, #3490dc 90%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

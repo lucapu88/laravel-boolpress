@@ -33,7 +33,7 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 $(document).ready(function(){
   var clock = setInterval(function(){ //apro la funzione che fa partire il mio timer
     $(".title h2").fadeIn(2000); //appare il titolo nel centro della pagina sfumando in 2 secondi
-  }, 1000)
-  $(".title h1").animate({marginLeft: "+350px"}, 1000, 'linear'); //il nome del sottotitolo nell'header scorre verso destra
+  }, 1500)
+  $(".title h1").animate({marginLeft: "+330px"}, 1500, 'linear'); //il nome del sottotitolo nell'header scorre verso destra
 
 });
