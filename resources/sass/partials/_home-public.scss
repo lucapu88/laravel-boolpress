@@ -1,0 +1,19 @@
+.home {
+  background-image: url('https://images.pexels.com/photos/1565982/pexels-photo-1565982.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  .title {
+    display: flex;
+    margin-top: 20%;
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+    h1 {
+      font-size: 90px;
+      color: white;
+    }
+  }
+}

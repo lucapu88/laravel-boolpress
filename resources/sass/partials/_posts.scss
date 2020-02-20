@@ -1,0 +1,14 @@
+.listaPost {
+    background-color: #F8FAFC;
+    list-style-type: none;
+    padding: 10px;
+}
+.containerImg {
+  height: 1000px;
+  background-image: url('https://images.pexels.com/photos/5929/food-salad-dinner-eating.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-repeat: no-repeat;
+  background-size: cover;
+  .col-sm-6 {
+    margin-top: 20px;
+  }
+}

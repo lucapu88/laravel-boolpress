@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 @section('content')
-  <div class="container">
+  <div class="container backgroundIMG">
     <div class="row">
       <div class="col-sm-12">
         <h1>Creazione nuovo post</h1>
@@ -19,7 +19,7 @@
             <label for="content">Ingredienti</label>
             <textarea class="form-control" id="content" placeholder="Inserisci gli ingredienti della tua ricetta*" name="content" rows="10" required></textarea>
           </div>
-          <button type="submit" class="btn btn-outline-success">Inserisci</button>
+          <button type="submit" class="btn btn-success">Inserisci</button>
         </form>
       </div>
     </div>

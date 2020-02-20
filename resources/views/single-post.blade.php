@@ -1,6 +1,6 @@
 @extends('layouts.public')
 @section('content')
-  <div class="container">
+  <div class="container backgroundSingle">
     <div class="row">
       <div class="col-sm-12">
         <div class="card" style="width: 30rem;">

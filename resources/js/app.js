@@ -30,3 +30,9 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 const app = new Vue({
     el: '#app',
 });
+$(document).ready(function(){
+  var clock = setInterval(function(){ //apro la funzione che fa partire il mio timer
+    $(".title h1").fadeIn(2000); //appare lo slogan della squadra sfumando nel main in 2 secondi
+    }, 1000)
+
+  });

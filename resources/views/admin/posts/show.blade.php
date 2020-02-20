@@ -1,9 +1,9 @@
 @extends('layouts.admin')
 @section('content')
-  <div class="container">
+  <div class="container showBackground">
     <div class="row">
       <div class="col-sm-12">
-        <div class="card" style="width: 30rem;">
+        <div class="card mx-auto" style="width: 30rem;">
           <div class="card-body">
               <h2 class="card-title">{{$post->title}}</h2>
               <h6 class="card-subtitle mb-2 text-muted">{{$post->slug}}</h6>

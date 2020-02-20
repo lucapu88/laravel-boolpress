@@ -1,14 +1,14 @@
 @extends('layouts.public')
 @section('content')
-  <div class="container">
+  <div class="container containerImg">
     <div class="row">
-      <div class="col-sm-12">
-        <h1>Lista post</h1>
+      <div class="col-sm-6">
+        <h1 class="listaPost">Lista post</h1>
         <ul>
           @forelse ($posts as $post)
-            <li><a href="{{route('blog.show',['slug' => $post->slug])}}">{{$post->title}}</a></li>
+            <li class="listaPost"><a href="{{route('blog.show',['slug' => $post->slug])}}">{{$post->title}}</a></li>
           @empty
-          <li>Non ci sono ancora post</li>
+          <li class="listaPost">Non ci sono ancora post</li>
           @endforelse
         </ul>
       </div>

@@ -1,5 +1,9 @@
 {{-- HOMEPAGE PUBLICA --}}
 @extends('layouts.public')
 @section('content')
-    <img src="https://images.pexels.com/photos/1565982/pexels-photo-1565982.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" width="100%">
+  <div class="home">
+    <div class="title">
+      <h1>Le ricette della nonna</h1>
+    </div>
+  </div>
 @endsection

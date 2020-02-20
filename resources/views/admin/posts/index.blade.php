@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 @section('content')
-  <div class="container">
+  <div class="container adminContainer">
     <div class="row">
       <div class="col-sm-12">
         <h1 class="float-left">Gestione posts</h1>
@@ -9,7 +9,7 @@
     </div>
     <div class="row">
       <div class="col-sm-12">
-        <table class="table">
+        <table class="table adminContainer">
           <thead>
             <tr>
               <th>ID</th>
