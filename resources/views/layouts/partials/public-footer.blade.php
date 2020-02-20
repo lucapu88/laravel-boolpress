@@ -1,4 +1,4 @@
-<div class="card text-center">
+<div class="card text-center gradient">
   <div class="card-header">
     Featured
   </div>

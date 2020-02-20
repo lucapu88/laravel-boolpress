@@ -1,0 +1,18 @@
+.gradient {
+  background: rgb(19,56,75);
+  background: linear-gradient(90deg, rgba(19,56,75,1) 0%, rgba(0,13,19,1) 50%, rgba(19,56,75,1) 100%);
+  color: white;
+}
+.card-body {
+  .fab {
+    margin: 0 15px;
+  }
+  .fab:hover {
+    cursor: pointer;
+  }
+}
+.admin {
+  a {
+    color: black;
+  }
+}

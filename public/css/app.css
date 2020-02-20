@@ -10897,19 +10897,24 @@ a.text-dark:focus {
   width: 100%;
   height: 1000px;
   display: flex;
-  justify-content: center;
 }
 
 .home .title {
-  display: flex;
-  margin-top: 20%;
+  margin-top: 15%;
   font-family: "Lobster", cursive;
   font-weight: bold;
+  color: white;
 }
 
 .home .title h1 {
   font-size: 90px;
-  color: white;
+  margin-left: -800px;
+}
+
+.home .title h2 {
+  display: none;
+  margin-left: 50%;
+  font-size: 50px;
 }
 
 main {
@@ -10918,6 +10923,24 @@ main {
 
 .login {
   margin-top: 50px;
+}
+
+.gradient {
+  background: #13384b;
+  background: linear-gradient(90deg, #13384b 0%, #000d13 50%, #13384b 100%);
+  color: white;
+}
+
+.card-body .fab {
+  margin: 0 15px;
+}
+
+.card-body .fab:hover {
+  cursor: pointer;
+}
+
+.admin a {
+  color: black;
 }
 
 .listaPost {

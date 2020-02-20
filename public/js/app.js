@@ -49522,15 +49522,18 @@ Vue.component('example-component', __webpack_require__(/*! ./components/ExampleC
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
+// const app = new Vue({
+//     el: '#app',
+// });
 
-var app = new Vue({
-  el: '#app'
-});
 $(document).ready(function () {
   var clock = setInterval(function () {
     //apro la funzione che fa partire il mio timer
-    $(".title h1").fadeIn(2000); //appare lo slogan della squadra sfumando nel main in 2 secondi
+    $(".title h2").fadeIn(2000); //appare il titolo nel centro della pagina sfumando in 2 secondi
   }, 1000);
+  $(".title h1").animate({
+    marginLeft: "+350px"
+  }, 1000, 'linear'); //il nome della squadra nell'header scorre verso destra
 });
 
 /***/ }),
