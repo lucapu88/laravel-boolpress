@@ -6,6 +6,7 @@ use App\Post;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Storage;
 
 
 class PostController extends Controller
@@ -28,7 +29,11 @@ class PostController extends Controller
     public function store(Request $request)
     {
         $dati = $request->all();
+        $img = $dati['img'];
+        $img_path = Storage::put('uploads', $img);
+
         $post = new Post();
+        $post->img = $img_path;
         $post->fill($dati);
         $slugOriginale = Str::slug($dati['title']);
         $slug = $slugOriginale;

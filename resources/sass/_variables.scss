@@ -25,3 +25,7 @@ $paddingOrMargin-top: 50px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+@mixin colorGradient($color1, $color2) { //crea un gradient del colore dello sfondo
+  background: $color1;
+  background: radial-gradient(circle, $color1 60%, $color2 100%);
+}

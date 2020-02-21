@@ -9,6 +9,9 @@
     margin-top: 15%;
     font-family: 'Lobster', cursive;
     font-weight: bold;
+    &:hover {
+      cursor: context-menu;
+    }
     h1 {
       font-size: 100px;
       margin-left: -80%;

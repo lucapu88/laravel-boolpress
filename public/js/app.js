@@ -49532,7 +49532,7 @@ $(document).ready(function () {
     $(".title h2").fadeIn(2000); //appare il titolo nel centro della pagina sfumando in 2 secondi
   }, 1500);
   $(".title h1").animate({
-    marginLeft: "+330px"
+    marginLeft: "+250px"
   }, 1500, 'linear'); //il nome del sottotitolo nell'header scorre verso destra
 });
 

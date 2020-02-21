@@ -2,6 +2,8 @@
     background-color: #F8FAFC;
     list-style-type: none;
     padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
 }
 .containerImg {
   height: 1000px;
@@ -10,5 +12,8 @@
   background-size: cover;
   .col-sm-6 {
     margin-top: 20px;
+    h1 {
+      font-size: 25px;
+    }
   }
 }
