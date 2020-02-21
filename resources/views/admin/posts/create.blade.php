@@ -22,7 +22,7 @@
           </div>
           <div class="form-group">
             <label for="img">Immagine di copertina</label>
-            <input type="file" class="form-control" name='img' id="img">
+            <input type="file" class="form-control" name='img_file' id="img">
           </div>
           <button type="submit" class="btn btn-success">Inserisci</button>
         </form>

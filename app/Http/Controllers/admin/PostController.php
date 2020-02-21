@@ -29,9 +29,8 @@ class PostController extends Controller
     public function store(Request $request)
     {
         $dati = $request->all();
-        $img = $dati['img'];
+        $img = $dati['img_file'];
         $img_path = Storage::put('uploads', $img);
-
         $post = new Post();
         $post->img = $img_path;
         $post->fill($dati);
@@ -68,6 +67,9 @@ class PostController extends Controller
     public function update(Request $request, Post $post)
     {
         $dati = $request->all();
+        $img = $dati['img_file'];
+        $img_path = Storage::put('uploads', $img);
+        $dati['img'] = $img_path;
         $post->update($dati);
         return redirect()->route('admin.posts.index');
     }
