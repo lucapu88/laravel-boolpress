@@ -6,6 +6,9 @@
         <div class="card" style="width: 30rem;">
           <div class="card-body">
               <h2 class="card-title">{{$post->title}}</h2>
+              @if ($post->img)
+                <img class="img-fluid" src="{{asset('storage/' . $post->img)}}" alt="foto:{{$post->title}}">
+              @endif
               <h6 class="card-subtitle mb-2 text-muted">{{$post->slug}}</h6>
               <p class="card-text"><strong>Descrizione: </strong> {{$post->content}}</p>
               <p class="card-text"><strong>Autore: </strong> {{$post->author}}</p>

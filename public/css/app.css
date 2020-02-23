@@ -10991,6 +10991,10 @@ main {
   margin-top: 20px;
 }
 
+.backgroundSingle .col-sm-12 h6 {
+  padding-top: 15px;
+}
+
 .adminContainer {
   background-color: black;
   color: white;
@@ -11032,5 +11036,13 @@ main {
   background-size: cover;
   color: white;
   padding: 20px;
+}
+
+.grazie {
+  padding-top: 100px;
+}
+
+.contenitoreGrazie {
+  height: 80vh;
 }
 
