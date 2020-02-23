@@ -1,9 +1,9 @@
 @extends('layouts.public')
 @section('content')
-  <div class="container containerImg">
+  <div class="container contatti">
     <div class="row">
       <div class="col-sm-12">
-        <h1 class="listaPost">Contattaci</h1>
+        <h1>Compila il form per contattarci</h1>
         <form action="{{route('contatti.store')}}" method="post">
           @csrf
           <div class="form-group">
