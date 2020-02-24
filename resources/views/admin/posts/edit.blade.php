@@ -4,7 +4,7 @@
     <div class="row">
       <div class="col-sm-12">
         <h1>Modifica post</h1>
-        <small>* = campi obbligatori</small>
+        {{-- <small>* = campi obbligatori</small> --}}
         <form method="post" action="{{route('admin.posts.update', ['post'=> $post->id])}}" enctype="multipart/form-data">
           @csrf
           @method('PUT')

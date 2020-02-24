@@ -21,8 +21,8 @@
             <textarea class="form-control" id="content" placeholder="Inserisci gli ingredienti della tua ricetta" name="content" rows="10" required></textarea>
           </div>
           <div class="form-group">
-            <label for="img">Immagine di copertina</label>
-            <input type="file" class="form-control" name='img_file' id="img">
+            <label for="img">Immagine di copertina*</label>
+            <input type="file" class="form-control" name='img_file' id="img" required>
           </div>
           <button type="submit" class="btn btn-success">Inserisci</button>
         </form>
