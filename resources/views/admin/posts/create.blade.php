@@ -24,7 +24,14 @@
             <label for="img">Immagine di copertina*</label>
             <input type="file" class="form-control" name='img_file' id="img" required>
           </div>
-          <button type="submit" class="btn btn-success">Inserisci</button>
+          <p>Categoria:</p>
+          <select class="custom-select col-sm-3" name="category_id">
+            <option value="">Seleziona la categoria</option>
+            @foreach ($categories as $category)
+              <option value="{{$category->id}}">{{$category->name}}</option>
+            @endforeach
+          </select>
+          <button type="submit" class="btn btn-success offset-sm-1 btn-lg">Inserisci</button>
         </form>
       </div>
     </div>

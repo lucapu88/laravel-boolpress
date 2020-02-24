@@ -11,6 +11,7 @@
           <li class="listaPost">Non ci sono ancora post</li>
           @endforelse
         </ul>
+         {{-- {{$posts->links()}}--}} {{--se si vuol gestire la paginazione e dividere i post per pagina--}} 
       </div>
     </div>
   </div>
