@@ -61,8 +61,10 @@ class PostController extends Controller
     //modifica un post
     public function edit(Post $post)
     {
+        $categories = Category::all();
         $data = ['post' => $post];
-        return view('admin.posts.edit', $data);
+        $data2 = ['categories' => $categories];
+        return view('admin.posts.edit', $data, $data2);
     }
 
     //salva le modifiche

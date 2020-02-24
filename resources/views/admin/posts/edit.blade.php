@@ -27,6 +27,13 @@
             @endif
             <input type="file" class="form-control" name='img_file' id="img">
           </div>
+          <p>Categoria:</p>
+          <select class="custom-select col-sm-3" name="category_id">
+            <option value="">Seleziona la categoria</option>
+            @foreach ($categories as $category) {{-- se il post ha una categoria e l'id della categoria è uguale all'id della categoria che sto disegnando, stampo selected, altrimenti non stampo niente --}}
+               <option value="{{$category->id}}" {{$post->category && $post->category->id == $category->id ? 'selected' : ''}}>{{$category->name}}</option>
+            @endforeach
+          </select>
           <button type="submit" class="btn btn-primary">Aggiorna Modifiche</button>
         </form>
       </div>

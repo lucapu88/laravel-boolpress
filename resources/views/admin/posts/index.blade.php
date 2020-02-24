@@ -15,7 +15,7 @@
               <th>ID</th>
               <th>Titolo</th>
               <th>Slug</th>
-              {{-- <th>Categoria</th> --}}
+              {{-- <th>Categoria</th> --}} {{-- la commento poichè personalmente non mi piacciono troppe colonne --}}
               <th>Autore</th>
               <th>Azioni</th>
             </tr>
@@ -26,7 +26,7 @@
                 <td>{{$post->id}}</td>
                 <td>{{$post->title}}</td>
                 <td>{{$post->slug}}</td>
-                {{-- <td>{{$post->category ? $post->category->name : ' '}}</td> --}}
+                {{-- <td>{{$post->category ? $post->category->name : ' '}}</td> --}} {{-- la commento poichè personalmente non mi piacciono troppe colonne --}} 
                 <td>{{$post->author}}</td>
                 <td>
                   <a class="btn btn-outline-primary" href="{{route('admin.posts.show',['post'=>$post->id])}}">Visualizza Dettagli</a>
