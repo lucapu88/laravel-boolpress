@@ -12,6 +12,9 @@
               <h6 class="card-subtitle mb-2 text-muted">{{$post->slug}}</h6>
               <p class="card-text"><strong>Descrizione: </strong> {{$post->content}}</p>
               <p class="card-text"><strong>Autore: </strong> {{$post->author}}</p>
+              @if (!empty($post->category)) {{--se è assegnata una categoria la mostro altrimenti no --}}
+                <p class="card-text"><strong>Categoria: </strong> {{$post->category->name}}</p>
+              @endif
               <p class="card-text"><strong>Creato il: </strong> {{$post->created_at}}</p>
               <p class="card-text"><strong>Aggiornato il: </strong> {{$post->updated_at}}</p>
           </div>
