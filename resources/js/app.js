@@ -32,11 +32,22 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 // });
 $(document).ready(function(){
   var clock = setInterval(function(){ //apro la funzione che fa partire il mio timer
-    $(".title h2").fadeIn(2000); //appare il titolo nel centro della pagina sfumando in 2 secondi
+    $(".title h2").slideDown(1500); //appare il titolo nel centro della pagina sfumando in 2 secondi
   }, 1500)
   var clock = setInterval(function(){ //apro la funzione che fa partire il mio timer
-    $(".title a").fadeIn(2500); //appare il titolo nel centro della pagina sfumando in 2 secondi
+    $(".title a").fadeIn(3000); //appare il titolo nel centro della pagina sfumando in 2 secondi
   }, 2500)
   $(".title h1").animate({marginLeft: "+250px"}, 1500, 'linear'); //il nome del sottotitolo nell'header scorre verso destra
 
+  var prevTop = $(window).scrollTop(); //imposto la posizione iniziale sulla posizione corrente sulla pagina
+  $(window).on('scroll', function(e) { //quando vado a fare scroll con il mouse
+    st = $(this).scrollTop(); //imposto la posizione di scorrimento
+    //console.log(st);
+    if (st > 300) { //se la posizione di scorrimento è maggiore a 490 (quindi quando faccio scroll in basso fino a 490px)
+      $('.title').css('margin-top', '48%');
+    } else { //altrimenti (se faccio scroll in alto)
+      $('.title').css('margin-top', '15%');
+    }
+    prevTop = st; //la posizione iniziale sulla posizione corrente sulla pagina, diventa la posizione di scorrimento
+  });
 });
