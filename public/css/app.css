@@ -11051,3 +11051,27 @@ main {
   color: white;
 }
 
+.error {
+  background-image: url("https://images.pexels.com/photos/3214277/pexels-photo-3214277.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.error .text {
+  color: white;
+}
+
+.error .text h1 {
+  font-size: 50px;
+  font-family: "Alfa Slab One";
+}
+
+.error .text a {
+  font-weight: bold;
+  margin-top: 50px;
+}
+

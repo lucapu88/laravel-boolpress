@@ -31,11 +31,13 @@ class PostController extends Controller
     public function store(Request $request)
     {
         $dati = $request->all();
-        $img = $dati['img_file'];
-        $img_path = Storage::put('uploads', $img);
         $post = new Post();
-        $post->img = $img_path;
         $post->fill($dati);
+        if (!empty($dati['img_file'])) {
+          $img = $dati['img_file'];
+          $img_path = Storage::put('uploads', $img);
+          $post->img = $img_path;
+        }
         $slugOriginale = Str::slug($dati['title']);
         $slug = $slugOriginale;
         //per far si che non ci sia uno slug uguale
