@@ -32,6 +32,12 @@ class PostController extends Controller
     //salva i dati del post
     public function store(Request $request)
     {
+        $request->validate([ //dichiaro i valori obbligatori
+          'title' => 'required|max:255',
+          'author' => 'required|max:100',
+          'content' => 'required',
+          'img_file' => 'image'
+        ]);
         $dati = $request->all(); //recupero i dati del form
         $post = new Post(); //creo un novo oggetto post
         $post->fill($dati); //compilo tutti i dati compilabili in automatico
@@ -77,6 +83,12 @@ class PostController extends Controller
     //salva le modifiche
     public function update(Request $request, Post $post)
     {
+        $request->validate([ //dichiaro i valori obbligatori
+          'title' => 'required|max:255',
+          'author' => 'required|max:100',
+          'content' => 'required',
+          'img_file' => 'image'
+        ]);
         $dati = $request->all(); //recupero il post dal db
         $post->fill($dati);
         if (!empty($dati['img_file'])) { //se c'era già un'immagine di copertina
