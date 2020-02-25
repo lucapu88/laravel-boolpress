@@ -20,8 +20,16 @@
     h2 {
       display: none;
       margin-left: 50%;
+      margin-bottom: 40px;
       font-size: 60px;
       @include textColorGradient($yellow, $blue);
+    }
+    a {
+      display: none;
+      margin-top: 60px;
+      margin-left: 50%;
+      font-size: 35px;
+      border-radius: 30px;
     }
   }
 }

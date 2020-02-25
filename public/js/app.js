@@ -49531,6 +49531,10 @@ $(document).ready(function () {
     //apro la funzione che fa partire il mio timer
     $(".title h2").fadeIn(2000); //appare il titolo nel centro della pagina sfumando in 2 secondi
   }, 1500);
+  var clock = setInterval(function () {
+    //apro la funzione che fa partire il mio timer
+    $(".title a").fadeIn(2500); //appare il titolo nel centro della pagina sfumando in 2 secondi
+  }, 2500);
   $(".title h1").animate({
     marginLeft: "+250px"
   }, 1500, 'linear'); //il nome del sottotitolo nell'header scorre verso destra

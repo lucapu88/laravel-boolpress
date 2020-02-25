@@ -10925,10 +10925,19 @@ body {
 .home .title h2 {
   display: none;
   margin-left: 50%;
+  margin-bottom: 40px;
   font-size: 60px;
   background: -webkit-radial-gradient(circle, #ffed4a 0%, #3490dc 90%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.home .title a {
+  display: none;
+  margin-top: 60px;
+  margin-left: 50%;
+  font-size: 35px;
+  border-radius: 30px;
 }
 
 main {
@@ -11068,6 +11077,9 @@ main {
 .error .text h1 {
   font-size: 50px;
   font-family: "Alfa Slab One";
+  background: -webkit-radial-gradient(circle, #ffed4a 0%, #3490dc 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .error .text a {

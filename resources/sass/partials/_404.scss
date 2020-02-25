@@ -11,6 +11,7 @@
     h1 {
       font-size: 50px;
       font-family: 'Alfa Slab One', ;
+      @include textColorGradient($yellow, $blue);
     }
     a {
       font-weight: bold;
