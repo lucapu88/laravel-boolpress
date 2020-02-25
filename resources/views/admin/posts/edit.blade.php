@@ -29,11 +29,22 @@
           </div>
           <p>Categoria:</p>
           <select class="custom-select col-sm-3" name="category_id">
+          @if ($categories->count() > 0)
             <option value="">Seleziona la categoria</option>
             @foreach ($categories as $category) {{-- se il post ha una categoria e l'id della categoria è uguale all'id della categoria che sto disegnando, stampo selected, altrimenti non stampo niente --}}
                <option value="{{$category->id}}" {{$post->category && $post->category->id == $category->id ? 'selected' : ''}}>{{$category->name}}</option>
             @endforeach
+          @endif
           </select>
+          @if ($tags->count() > 0)
+            <p>Seleziona tag per questo post: </p>
+            @foreach ($tags as $tag)
+              <label for='tag_{{$tag->id}}'>
+                <input id="tag_{{$tag->id}}" type="checkbox" name="tag_id[]" value="{{$tag->id}}" {{$post->tags->contains($tag) ? 'checked' : ''}}>
+                {{$tag->name}}
+              </label>
+            @endforeach
+          @endif
           <button type="submit" class="btn btn-primary">Aggiorna Modifiche</button>
         </form>
       </div>

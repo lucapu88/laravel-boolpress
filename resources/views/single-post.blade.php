@@ -15,6 +15,13 @@
               @if (!empty($post->category)) {{--se è assegnata una categoria la mostro altrimenti no --}}
                 <p class="card-text"><strong>Categoria: <a href="{{route('blog.category', ['slug' => $post->category->slug])}}">{{$post->category->name}}</a></strong></p>
               @endif
+              @if (($post->tags)->isNotEmpty()) {{--se la collection di tag non è vuota li stampa altrimenti no --}}
+                <p class="card-text"><strong>Tags:
+                  @foreach ($post->tags as $tag)
+                    {{$tag->name}}{{$loop->last ? '' : ', '}}
+                  @endforeach
+                </strong></p>
+              @endif
               <p class="card-text"><strong>Creato il: </strong> {{$post->created_at}}</p>
               <p class="card-text"><strong>Aggiornato il: </strong> {{$post->updated_at}}</p>
           </div>

@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Post;
 use App\Category;
+use App\Tag;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Str;
@@ -24,7 +25,8 @@ class PostController extends Controller
     public function create()
     {
         $categories = Category::all();
-        return view('admin.posts.create', ['categories' => $categories]);
+        $tags = Tag::all();
+        return view('admin.posts.create', ['categories' => $categories, 'tags' => $tags]);
     }
 
     //salva i dati del post
@@ -50,6 +52,9 @@ class PostController extends Controller
         }
         $post->slug = $slug;
         $post->save();
+        if (!empty($dati['tag_id'])) {
+          $post->tags()->sync($dati['tag_id']);
+        }
         return redirect()->route('admin.posts.index');
     }
 
@@ -64,9 +69,9 @@ class PostController extends Controller
     public function edit(Post $post)
     {
         $categories = Category::all();
-        $data = ['post' => $post];
-        $data2 = ['categories' => $categories];
-        return view('admin.posts.edit', $data, $data2);
+        $tags = Tag::all();
+        $data = ['post' => $post, 'categories' => $categories, 'tags' => $tags];
+        return view('admin.posts.edit', $data);
     }
 
     //salva le modifiche
@@ -80,6 +85,9 @@ class PostController extends Controller
           $post->img = $img_path;
         }
         $post->update($dati);
+        if (!empty($dati['tag_id'])) {
+          $post->tags()->sync($dati['tag_id']);
+        }
         return redirect()->route('admin.posts.index');
     }
 

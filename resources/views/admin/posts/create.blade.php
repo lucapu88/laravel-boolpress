@@ -31,6 +31,15 @@
               <option value="{{$category->id}}">{{$category->name}}</option>
             @endforeach
           </select>
+          @if ($tags->count() > 0)
+            <p>Seleziona tag per questo post: </p>
+            @foreach ($tags as $tag)
+              <label for='tag_{{$tag->id}}'>
+                <input id="tag_{{$tag->id}}" type="checkbox" name="tag_id[]" value="{{$tag->id}}">
+                {{$tag->name}}
+              </label>
+            @endforeach
+          @endif
           <button type="submit" class="btn btn-success offset-sm-1 btn-lg">Inserisci</button>
         </form>
       </div>
