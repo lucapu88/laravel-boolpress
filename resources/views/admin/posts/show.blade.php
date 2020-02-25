@@ -13,6 +13,13 @@
               <p class="card-text"><strong>Descrizione: </strong> {{$post->content}}</p>
               <p class="card-text"><strong>Autore: </strong> {{$post->author}}</p>
               <p class="card-text"><strong>Categoria: </strong> {{$post->category ? $post->category->name : ' ----- '}}</p>
+              <p class="card-text"><strong>Tags: </strong>
+                @forelse ($post->tags as $tag)
+                {{$tag->name}}{{$loop->last ? '' : ', '}}
+                @empty
+                  ----
+                @endforelse
+              </p>
               <p class="card-text"><strong>Creato il: </strong> {{$post->created_at}}</p>
               <p class="card-text"><strong>Aggiornato il: </strong> {{$post->updated_at}}</p>
           </div>

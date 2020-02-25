@@ -18,7 +18,7 @@
               @if (($post->tags)->isNotEmpty()) {{--se la collection di tag non è vuota li stampa altrimenti no --}}
                 <p class="card-text"><strong>Tags:
                   @foreach ($post->tags as $tag)
-                    {{$tag->name}}{{$loop->last ? '' : ', '}}
+                    <a href="{{route('blog.tag', ['slug' => $tag->slug])}}">{{$tag->name}}</a>{{$loop->last ? '' : ', '}}
                   @endforeach
                 </strong></p>
               @endif
