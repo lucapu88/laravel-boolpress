@@ -49547,11 +49547,11 @@ $(document).ready(function () {
     //console.log(st);
 
     if (st > 300) {
-      //se la posizione di scorrimento è maggiore a 490 (quindi quando faccio scroll in basso fino a 490px)
-      $('.title').css('margin-top', '48%');
+      //se la posizione di scorrimento è maggiore a 300 (quindi quando faccio scroll in basso fino a 300px)
+      $('.title').css('margin-top', '48%'); //il testo scende del 48%
     } else {
       //altrimenti (se faccio scroll in alto)
-      $('.title').css('margin-top', '15%');
+      $('.title').css('margin-top', '15%'); //il testo torna in posizione di partenza
     }
 
     prevTop = st; //la posizione iniziale sulla posizione corrente sulla pagina, diventa la posizione di scorrimento
