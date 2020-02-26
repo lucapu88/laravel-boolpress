@@ -49527,6 +49527,8 @@ Vue.component('example-component', __webpack_require__(/*! ./components/ExampleC
 // });
 
 $(document).ready(function () {
+  // var larghezzaMonitor = $(window).width();
+  // if (larghezzaMonitor > 992) {
   var clock = setInterval(function () {
     //apro la funzione che fa partire il mio timer
     $(".title h2").slideDown(1500); //appare il titolo nel centro della pagina sfumando in 2 secondi
@@ -49536,8 +49538,9 @@ $(document).ready(function () {
     $(".title a").fadeIn(3000); //appare il titolo nel centro della pagina sfumando in 2 secondi
   }, 2500);
   $(".title h1").animate({
-    marginLeft: "+250px"
+    marginLeft: "20%"
   }, 1500, 'linear'); //il nome del sottotitolo nell'header scorre verso destra
+  // }
 
   var prevTop = $(window).scrollTop(); //imposto la posizione iniziale sulla posizione corrente sulla pagina
 

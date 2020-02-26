@@ -19,7 +19,7 @@
                   <a class="nav-link" href="#">Info</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="{{route('contatti.show')}}">Contatti</a>
+                  <a class="nav-link {{ Route::currentRouteName() == 'contatti.show' ? 'active' : '' }}" href="{{route('contatti.show')}}">Contatti</a>
               </li>
               <li class="nav-item">
                   <a class="nav-link {{ Route::currentRouteName() == 'blog' ? 'active' : '' }}" href="{{route('blog')}}">Blog-Ricette</a>

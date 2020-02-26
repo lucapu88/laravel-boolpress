@@ -32,7 +32,7 @@
           <div class="form-group">
             <label for="img">Immagine di copertina</label>
             @if ($post->img)
-              <img class="img-fluid" src="{{asset('storage/' . $post->img)}}" alt="foto:{{$post->title}}">
+              <img class="img-fluid imgEdit" src="{{asset('storage/' . $post->img)}}" alt="foto:{{$post->title}}">
             @endif
             <input type="file" class="form-control" name='img_file' id="img">
           </div>

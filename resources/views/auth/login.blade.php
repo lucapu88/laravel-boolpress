@@ -4,7 +4,11 @@
 <div class="container login">
     <div class="row justify-content-center">
         <div class="col-md-8">
+          <h1 class="text-white text-center"> Solo l'admin può accedere a questa pagina!</h1>
+          <p class="text-white text-center"> Se sei arrivato in questa pagina hai cliccato qualcosa per sbaglio.</p>
+          <p><a class="btn btn-outline-primary offset-sm-5" href="{{route('public-home')}}">Torna in Homepage</a></p>
             <div class="card">
+
                 <div class="card-header">{{ __('Login') }}</div>
 
                 <div class="card-body">

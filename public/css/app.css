@@ -10895,6 +10895,17 @@ body {
   background: radial-gradient(circle, black 60%, #123547 100%);
 }
 
+.navbar {
+  background: #ffed4a;
+  background: radial-gradient(circle, #ffed4a 60%, #3490dc 100%);
+  color: #123547;
+  font-weight: bold;
+}
+
+.navbar-brand {
+  font-family: "Fontdiner Swanky";
+}
+
 .home {
   background-image: url("https://images.pexels.com/photos/1565982/pexels-photo-1565982.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   background-repeat: no-repeat;
@@ -10908,6 +10919,7 @@ body {
   margin-top: 15%;
   font-family: "Lobster", cursive;
   font-weight: bold;
+  width: 100%;
 }
 
 .home .title:hover {
@@ -10924,7 +10936,7 @@ body {
 
 .home .title h2 {
   display: none;
-  margin-left: 50%;
+  margin-left: 37%;
   margin-bottom: 40px;
   font-size: 60px;
   background: -webkit-radial-gradient(circle, #ffed4a 0%, #3490dc 90%);
@@ -10935,9 +10947,23 @@ body {
 .home .title a {
   display: none;
   margin-top: 60px;
-  margin-left: 50%;
+  margin-left: 37%;
   font-size: 35px;
   border-radius: 30px;
+}
+
+@media screen and (max-width: 992px) {
+  .home .title h1 {
+    font-size: 50px;
+  }
+
+  .home .title h2 {
+    font-size: 30px;
+  }
+
+  .home .title a {
+    font-size: 12px;
+  }
 }
 
 main {
@@ -10979,6 +11005,7 @@ main {
   background-image: url("https://images.pexels.com/photos/5929/food-salad-dinner-eating.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   background-repeat: no-repeat;
   background-size: cover;
+  overflow-y: auto;
 }
 
 .containerImg .col-sm-6 {
@@ -11045,6 +11072,11 @@ main {
   background-size: cover;
   color: white;
   padding: 20px;
+}
+
+.backgroundEdit .imgEdit {
+  width: 300px;
+  padding-bottom: 20px;
 }
 
 .grazie {

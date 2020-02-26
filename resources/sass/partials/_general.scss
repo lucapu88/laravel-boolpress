@@ -6,3 +6,11 @@
 body {
   @include colorGradient(black, #123547);
 }
+.navbar {
+  @include colorGradient($yellow, $blue);
+  color: #123547;
+  font-weight: bold;
+}
+.navbar-brand {
+  font-family: 'Fontdiner Swanky', ;
+}

@@ -99,6 +99,8 @@ class PostController extends Controller
         $post->update($dati); //aggiorno il post
         if (!empty($dati['tag_id'])) {  //se sono stati selezionati dei tag
           $post->tags()->sync($dati['tag_id']); //li assegno al post
+        } else { //se non selezioniamo nessun tag
+          $post->tags()->sync([]); //togli i tag che ci sono (ovvero, sganciali per poter aggiorna il post con i tag vuoti)
         }
         return redirect()->route('admin.posts.index'); //faccio redirect all'homepage dell'admin
     }

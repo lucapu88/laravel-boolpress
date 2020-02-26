@@ -9,6 +9,7 @@
     margin-top: 15%;
     font-family: 'Lobster', cursive;
     font-weight: bold;
+    width: 100%;
     &:hover {
       cursor: context-menu;
     }
@@ -19,7 +20,7 @@
     }
     h2 {
       display: none;
-      margin-left: 50%;
+      margin-left: $marginSlogan;
       margin-bottom: 40px;
       font-size: 60px;
       @include textColorGradient($yellow, $blue);
@@ -27,9 +28,24 @@
     a {
       display: none;
       margin-top: 60px;
-      margin-left: 50%;
+      margin-left: $marginSlogan;
       font-size: 35px;
       border-radius: 30px;
+    }
+  }
+}
+@media screen and (max-width:992px) {
+  .home {
+    .title {
+      h1 {
+        font-size: 50px;
+      }
+      h2 {
+        font-size: 30px;
+      }
+      a {
+        font-size: 12px;
+      }
     }
   }
 }

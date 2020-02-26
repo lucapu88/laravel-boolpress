@@ -19,6 +19,7 @@ $teal: #4dc0b5;
 $cyan: #6cb2eb;
 
 $paddingOrMargin-top: 50px;
+$marginSlogan: 37%; //margine sinistro all'h2 e al button dell'home
 
 @mixin textColorGradient($color1, $color2) { //crea un gradient del colore della scritta avendo in pasto 2 colori
   background: -webkit-radial-gradient(circle, $color1 0%, $color2 90%);

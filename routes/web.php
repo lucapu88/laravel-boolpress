@@ -21,7 +21,7 @@ Route::get('/blog/categorie/{slug}', 'PostController@postCategoria')->name('blog
 Route::get('/blog/tag/{slug}', 'PostController@postTag')->name('blog.tag');
 
 
-Auth::routes(['register' => false]);
+Auth::routes(['register' => false]); //per disabilitare la registrazione
 
 Route::middleware('auth')->prefix('admin')->namespace('Admin')->name('admin.')->group(function(){
   Route::get('/', 'HomeController@index')->name('home');
