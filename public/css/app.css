@@ -10953,6 +10953,10 @@ body {
 }
 
 @media screen and (max-width: 992px) {
+  .home {
+    height: 500px;
+  }
+
   .home .title h1 {
     font-size: 50px;
   }

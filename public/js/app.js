@@ -49538,7 +49538,7 @@ $(document).ready(function () {
     $(".title a").fadeIn(3000); //appare il titolo nel centro della pagina sfumando in 2 secondi
   }, 2500);
   $(".title h1").animate({
-    marginLeft: "20%"
+    marginLeft: "15%"
   }, 1500, 'linear'); //il nome del sottotitolo nell'header scorre verso destra
   // }
 
