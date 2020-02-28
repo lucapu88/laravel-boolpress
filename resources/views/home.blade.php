@@ -5,7 +5,7 @@
     <div class="title">
       <h1>La cucina della nonna</h1>
       <h2>Ricette per tutti</h2>
-      <a class="btn btn-primary btn-lg" href="{{route('blog')}}"><i class="fas fa-utensils"></i> Scopri le nostre ricette</a>
+      <a class="btn btn-primary btn-lg" href="{{route('blog')}}"><i class="fas fa-utensils"></i> {{__('messages.home_button')}}</a>
     </div>
   </div>
 @endsection

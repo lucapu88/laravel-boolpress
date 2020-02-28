@@ -19,10 +19,10 @@
                   <a class="nav-link" href="#">Info</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link {{ Route::currentRouteName() == 'contatti.show' ? 'active' : '' }}" href="{{route('contatti.show')}}">Contatti</a>
+                  <a class="nav-link {{ Route::currentRouteName() == 'contatti.show' ? 'active' : '' }}" href="{{route('contatti.show')}}">{{__('messages.nav_contact')}}</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link {{ Route::currentRouteName() == 'blog' ? 'active' : '' }}" href="{{route('blog')}}">Blog-Ricette</a>
+                  <a class="nav-link {{ Route::currentRouteName() == 'blog' ? 'active' : '' }}" href="{{route('blog')}}">{{__('messages.nav_recipes')}}</a>
               </li>
               @auth
                 <li class="nav-item dropdown">
@@ -43,6 +43,15 @@
                     </div>
                 </li>
               @endauth
+              <ul class="nav">
+                @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
+                    <li class="nav-item">
+                         <a class="nav-link {{--{{ Route::currentRouteName() == 'blog' ? 'active' : '' }}--}}" rel="alternate" hreflang="{{ $localeCode }}" href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}"> 
+                            {{ $properties['native'] }}
+                        </a>
+                    </li>
+                @endforeach
+              </ul>
             </ul>
         </div>
     </div>

@@ -38,14 +38,17 @@
   .home {
     height: 500px;
     .title {
+      text-align: center;
       h1 {
         font-size: 50px;
       }
       h2 {
         font-size: 30px;
+        margin-left: 12%;
       }
       a {
         font-size: 12px;
+        margin-left: 12%;
       }
     }
   }

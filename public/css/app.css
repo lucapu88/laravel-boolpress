@@ -10957,16 +10957,22 @@ body {
     height: 500px;
   }
 
+  .home .title {
+    text-align: center;
+  }
+
   .home .title h1 {
     font-size: 50px;
   }
 
   .home .title h2 {
     font-size: 30px;
+    margin-left: 12%;
   }
 
   .home .title a {
     font-size: 12px;
+    margin-left: 12%;
   }
 }
 
@@ -11113,7 +11119,7 @@ main {
 .error .text h1 {
   font-size: 50px;
   font-family: "Alfa Slab One";
-  background: -webkit-radial-gradient(circle, #ffed4a 0%, #3490dc 90%);
+  background: -webkit-radial-gradient(circle, #3490dc 0%, #ffed4a 90%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
