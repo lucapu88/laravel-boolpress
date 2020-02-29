@@ -16,7 +16,7 @@
             <ul class="navbar-nav ml-auto">
               <!-- Authentication Links -->
               <li class="nav-item">
-                  <a class="nav-link" href="#">Info</a>
+                  <a class="nav-link {{ Route::currentRouteName() == 'info' ? 'active' : '' }}" href="{{route('info')}}">Info</a>
               </li>
               <li class="nav-item">
                   <a class="nav-link {{ Route::currentRouteName() == 'contatti.show' ? 'active' : '' }}" href="{{route('contatti.show')}}">{{__('messages.nav_contact')}}</a>
@@ -46,7 +46,7 @@
               <ul class="nav">
                 @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
                     <li class="nav-item">
-                         <a class="nav-link {{--{{ Route::currentRouteName() == 'blog' ? 'active' : '' }}--}}" rel="alternate" hreflang="{{ $localeCode }}" href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}"> 
+                         <a class="nav-link {{ Route::currentRouteName() == 'it' ? 'active' : '' }}" rel="alternate" hreflang="{{ $localeCode }}" href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
                             {{ $properties['native'] }}
                         </a>
                     </li>

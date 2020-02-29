@@ -12,6 +12,9 @@ class HomeController extends Controller
     public function index() {
       return view('home');
     }
+    public function info() {
+      return view('info');
+    }
     public function contatti() {
       return view('contatti');
     }

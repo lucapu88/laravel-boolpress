@@ -3,7 +3,7 @@
   <div class="container containerImg">
     <div class="row">
       <div class="col-sm-12 text-center">
-        <h1 class="listaPost">Lista categoria: {{$category->name}} </h1>
+        <h1 class="listaPost">{{__('messages.category')}}: {{$category->name}} </h1>
         <ul>
           @forelse ($posts as $post)
             <li class="listaPost"><a href="{{route('blog.show',['slug' => $post->slug])}}">{{$post->title}}</a></li>

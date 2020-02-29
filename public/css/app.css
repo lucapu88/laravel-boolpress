@@ -11129,3 +11129,22 @@ main {
   margin-top: 50px;
 }
 
+.containerInfo {
+  background-image: url("https://images.pexels.com/photos/1482803/pexels-photo-1482803.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 615px;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  font-family: "Permanent Marker";
+  padding: 20px;
+}
+
+.containerInfo h1 {
+  text-transform: uppercase;
+  margin-top: 10%;
+  margin-bottom: 50px;
+  color: #e3342f;
+}
+

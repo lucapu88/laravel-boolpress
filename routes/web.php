@@ -12,12 +12,13 @@
 */
 
 //rotte pubbliche
-Route::group(['prefix' => LaravelLocalization::setLocale()], function()
+Route::group(['prefix' => LaravelLocalization::setLocale(), 'middleware' => [ 'localize' ]], function()
 {
   Route::get('/', 'HomeController@index')->name('public-home');
-  Route::get('/contatti', 'HomeController@contatti')->name('contatti.show');
-  Route::post('/contatti', 'HomeController@contattiStore')->name('contatti.store');
-  Route::get('/grazie', 'HomeController@grazie')->name('contatti.grazie');
+  Route::get(LaravelLocalization::transRoute('routes.contact'), 'HomeController@contatti')->name('contatti.show');
+  Route::post(LaravelLocalization::transRoute('routes.contact'), 'HomeController@contattiStore')->name('contatti.store');
+  Route::get(LaravelLocalization::transRoute('routes.thankyou'), 'HomeController@grazie')->name('contatti.grazie');
+  Route::get('/info', 'HomeController@info')->name('info');
   Route::get('/blog', 'PostController@index')->name('blog');
   Route::get('/blog/{slug}', 'PostController@show')->name('blog.show');
   Route::get('/blog/categorie/{slug}', 'PostController@postCategoria')->name('blog.category');
