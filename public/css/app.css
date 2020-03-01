@@ -11129,14 +11129,15 @@ main {
 }
 
 .containerInfo {
-  background-image: url("https://images.pexels.com/photos/1482803/pexels-photo-1482803.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-image: url("https://images.pexels.com/photos/1907244/pexels-photo-1907244.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   background-repeat: no-repeat;
   background-size: cover;
   height: 615px;
   display: flex;
   flex-direction: column;
-  color: #fff;
+  background-position: bottom;
   font-family: "Permanent Marker";
+  color: #fff;
   padding: 20px;
 }
 
@@ -11144,11 +11145,15 @@ main {
   text-transform: uppercase;
   margin-top: 5%;
   margin-bottom: 50px;
-  color: #e3342f;
+  color: #3490dc;
 }
 
 .containerInfo h2 {
   margin-left: 16%;
+}
+
+.containerInfo:hover {
+  cursor: context-menu;
 }
 
 @media screen and (max-width: 768px) {
