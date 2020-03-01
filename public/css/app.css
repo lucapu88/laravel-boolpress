@@ -11015,7 +11015,6 @@ main {
   background-image: url("https://images.pexels.com/photos/5929/food-salad-dinner-eating.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   background-repeat: no-repeat;
   background-size: cover;
-  overflow-y: auto;
 }
 
 .containerImg .col-sm-6 {
@@ -11143,8 +11142,22 @@ main {
 
 .containerInfo h1 {
   text-transform: uppercase;
-  margin-top: 10%;
+  margin-top: 5%;
   margin-bottom: 50px;
   color: #e3342f;
+}
+
+.containerInfo h2 {
+  margin-left: 16%;
+}
+
+@media screen and (max-width: 768px) {
+  .containerInfo {
+    overflow-y: auto;
+  }
+
+  .containerInfo h2 {
+    margin-left: 0;
+  }
 }
 

@@ -46,7 +46,7 @@
               <ul class="nav">
                 @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
                     <li class="nav-item">
-                         <a class="nav-link {{ Route::currentRouteName() == 'it' ? 'active' : '' }}" rel="alternate" hreflang="{{ $localeCode }}" href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
+                         <a class="nav-link {{ Route::currentRouteName() == '' ? 'active' : '' }}" rel="alternate" hreflang="{{ $localeCode }}" href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
                             {{ $properties['native'] }}
                         </a>
                     </li>

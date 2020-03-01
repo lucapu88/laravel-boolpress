@@ -49559,6 +49559,10 @@ $(document).ready(function () {
 
     prevTop = st; //la posizione iniziale sulla posizione corrente sulla pagina, diventa la posizione di scorrimento
   });
+  $('.js-tilt').tilt({
+    //utilizzando la libreria tilt.js creo un effetto nella descrizione in info
+    scale: 1.2
+  });
 });
 
 /***/ }),

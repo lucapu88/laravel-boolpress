@@ -11,8 +11,20 @@
 
   h1 {
     text-transform: uppercase;
-    margin-top: 10%;
+    margin-top: 5%;
     margin-bottom: 50px;
     color: $red;
+  }
+  h2 {
+    margin-left: 16%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .containerInfo {
+    overflow-y: auto;
+    h2 {
+      margin-left: 0;
+    }
   }
 }

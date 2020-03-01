@@ -27,5 +27,7 @@
       @yield('content')
       @include('layouts.partials.public-footer')
     </main>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
   </body>
 </html>
