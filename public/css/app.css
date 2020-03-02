@@ -10898,8 +10898,11 @@ body {
 .navbar {
   background: #ffed4a;
   background: radial-gradient(circle, #ffed4a 60%, #3490dc 100%);
-  color: #123547;
   font-weight: bold;
+}
+
+.navbar-nav .nav-item .nav-link.active {
+  color: #e3342f;
 }
 
 .navbar-brand {
