@@ -45,8 +45,8 @@
               @endauth
               <ul class="nav">
                 @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
-                    <li class="nav-item">
-                         <a class="nav-link {{ Route::currentRouteName() == '' ? 'active' : '' }}" rel="alternate" hreflang="{{ $localeCode }}" href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
+                    <li class="nav-item navLang">
+                         <a class="nav-link {{ App::getLocale() == $properties['native'] ? 'active' : '' }}" rel="alternate" hreflang="{{ $localeCode }}" href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
                             {{ $properties['native'] }}
                         </a>
                     </li>

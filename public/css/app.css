@@ -10906,6 +10906,10 @@ body {
   font-family: "Fontdiner Swanky";
 }
 
+.navLang a {
+  text-transform: uppercase;
+}
+
 .home {
   background-image: url("https://images.pexels.com/photos/1565982/pexels-photo-1565982.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   background-repeat: no-repeat;
@@ -11145,7 +11149,7 @@ main {
   text-transform: uppercase;
   margin-top: 5%;
   margin-bottom: 50px;
-  color: #3490dc;
+  color: darkblue;
 }
 
 .containerInfo h2 {
